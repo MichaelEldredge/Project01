@@ -5,12 +5,14 @@ import java.util.Random;
 public class ArrayMethodDemo {
 	public static void main(String[] args) {
 		int n = 10;
+		int maxInt = 1000;
+
 		int []myArray = new int[n];
 
 		
 		System.out.println("1: Assign random values to a "+n+" element array.");
 		Random rand = new Random();
-		for (int i = 0; i<n; i++) myArray[i] = rand.nextInt(1000);
+		for (int i = 0; i<n; i++) myArray[i] = rand.nextInt(maxInt);
 		
 		System.out.println("2: Display the array");
 		display(myArray);
