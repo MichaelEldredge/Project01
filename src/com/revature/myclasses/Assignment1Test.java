@@ -8,22 +8,22 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
 
-class ArrayMethodDemoTest {
+class Assignment1Test {
 
 	@Test
 	void emptySumTest() {
 		int [] temp = {};
-		assertTrue(0 == ArrayMethodDemo.sum(temp) );
+		assertTrue(0 == Assignment1.sum(temp) );
 	}
 	@Test
 	void singleElementSumTest() {
 		int [] temp = {2};
-		assertTrue(2 == ArrayMethodDemo.sum(temp));
+		assertTrue(2 == Assignment1.sum(temp));
 	}
 	@Test
 	void multipleElementSumTest() {
 		int [] temp = {1,2,3};
-		assertTrue(6 == ArrayMethodDemo.sum(temp));
+		assertTrue(6 == Assignment1.sum(temp));
 	}
 	@Test
 	void displayEmptyArrayTest() {
@@ -33,7 +33,7 @@ class ArrayMethodDemoTest {
 		System.setOut(ps);
 		String emptyList = "{ }";
 		int [] temp = {};
-		ArrayMethodDemo.display(temp);
+		Assignment1.display(temp);
 		System.out.flush();
 		System.setOut(old);
 		assertTrue(emptyList.equals(baos.toString()));
@@ -46,7 +46,7 @@ class ArrayMethodDemoTest {
 		System.setOut(ps);
 		String trueList = "{ 1 2 }";
 		int [] temp = {1,2};
-		ArrayMethodDemo.display(temp);
+		Assignment1.display(temp);
 		System.out.flush();
 		System.setOut(old);
 		assertTrue(trueList.equals(baos.toString()));
@@ -54,50 +54,50 @@ class ArrayMethodDemoTest {
 	@Test
 	void getEvenElementsEmptyTest() {
 		int [] temp = {};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getEvenElements(temp),temp) == 0);
+		assertTrue(Arrays.compare(Assignment1.getEvenElements(temp),temp) == 0);
 	}
 	@Test
 	void getEvenElementsOddTest() {
 		int [] temp = {1};
 		int [] emptyList = {};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getEvenElements(temp),emptyList) == 0);
+		assertTrue(Arrays.compare(Assignment1.getEvenElements(temp),emptyList) == 0);
 	}
 	@Test
 	void getEvenmElementsEvenTest() {
 		int [] temp = {2};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getEvenElements(temp),temp) == 0);
+		assertTrue(Arrays.compare(Assignment1.getEvenElements(temp),temp) == 0);
 	}
 	@Test
 	void getOddElementsEmptyTest() {
 		int [] temp = {};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getOddElements(temp),temp) == 0);
+		assertTrue(Arrays.compare(Assignment1.getOddElements(temp),temp) == 0);
 	}
 	@Test
 	void getOddElementsOddTest() {
 		int [] temp = {1};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getOddElements(temp),temp) == 0);
+		assertTrue(Arrays.compare(Assignment1.getOddElements(temp),temp) == 0);
 	}
 	@Test
 	void getOddElementsEvenTest() {
 		int [] temp = {2};
 		int [] emptyList = {};
-		assertTrue(Arrays.compare(ArrayMethodDemo.getOddElements(temp),emptyList) == 0);
+		assertTrue(Arrays.compare(Assignment1.getOddElements(temp),emptyList) == 0);
 	}
 	@Test
 	void sortListAccendingEmpty() {
 		int [] temp = {};
-		assertTrue(Arrays.compare(ArrayMethodDemo.sortListAccending(temp),temp)==0);
+		assertTrue(Arrays.compare(Assignment1.sortListAccending(temp),temp)==0);
 	}
 	@Test
 	void sortListAccendingTwo() {
 		int [] temp = {2,1};
 		int [] sorted = {1,2};
-		assertTrue(Arrays.compare(ArrayMethodDemo.sortListAccending(temp),sorted)==0);
+		assertTrue(Arrays.compare(Assignment1.sortListAccending(temp),sorted)==0);
 	}
 	@Test
 	void sortListDescendingTwo() {
 		int [] temp = {1,2};
 		int [] sorted = {2,1};
-		assertTrue(Arrays.compare(ArrayMethodDemo.sortListDecending(temp),sorted)==0);		
+		assertTrue(Arrays.compare(Assignment1.sortListDecending(temp),sorted)==0);		
 	}
 }

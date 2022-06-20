@@ -2,7 +2,7 @@ package com.revature.myclasses;
 
 import java.util.Random;
 
-public class ArrayMethodDemo {
+public class Assignment1 {
 	public static void main(String[] args) {
 		int n = 10;
 		int maxInt = 1000;
