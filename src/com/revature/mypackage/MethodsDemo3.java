@@ -14,6 +14,7 @@ public class MethodsDemo3 {
 		System.out.println("The difference between "+n1+" and "+n2+" is "+difference(n1,n2));
 		System.out.println("The product of "+n1+" and "+n2+" is "+product(n1,n2));
 		System.out.println("The quotient between"+n1+" and "+n2+" is "+quotient(n1,n2));
+		sc.close();
 	}
 	private static int sum(int a, int b) {
 		return a + b;

@@ -1,6 +1,7 @@
 package com.revature.day05;
 
 public class EmployeeManager {
+@SuppressWarnings("unused")
 public static void main(String[] args) {
 	// Create instance of Emp class
 	

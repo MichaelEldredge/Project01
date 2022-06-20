@@ -13,6 +13,7 @@ public class MethodsDemo2 {
 		difference(n1,n2);
 		product(n1,n2);
 		quotient(n1,n2);
+		sc.close();
 	}
 	private static void sum(int a, int b) {
 		int result = a + b;

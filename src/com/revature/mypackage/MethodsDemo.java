@@ -18,6 +18,7 @@ public static void main(String[] args) {
 		int num2 = sc.nextInt();
 		int result = num1+ num2;
 		System.out.println("The sum of "+num1+" and "+num2+" is "+result);
+		sc.close();
 		
 	}
 	public static void difference() {
@@ -28,7 +29,7 @@ public static void main(String[] args) {
 		int num2 = sc.nextInt();
 		int result = num1 - num2;
 		System.out.println("The difference between "+num1+" and "+num2+" is "+result);
-		
+		sc.close();
 	}
 	public static void product() {
 		Scanner sc = new Scanner(System.in);
@@ -38,7 +39,7 @@ public static void main(String[] args) {
 		int num2 = sc.nextInt();
 		int result = num1 * num2;
 		System.out.println("The product of "+num1+" and "+num2+" is "+result);
-		
+		sc.close();
 	}
 	public static void quotient() {
 		Scanner sc = new Scanner(System.in);
@@ -48,6 +49,6 @@ public static void main(String[] args) {
 		int num2 = sc.nextInt();
 		int result = num1 / num2;
 		System.out.println("The quotient between "+num1+" and "+num2+" is "+result);
-		
+		sc.close();
 	}
 }
