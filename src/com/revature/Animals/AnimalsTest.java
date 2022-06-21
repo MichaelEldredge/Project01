@@ -1,4 +1,4 @@
-package com.revatute.Animals;
+package com.revature.Animals;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.io.ByteArrayOutputStream;

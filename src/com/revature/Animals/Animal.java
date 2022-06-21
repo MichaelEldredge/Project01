@@ -1,4 +1,4 @@
-package com.revatute.Animals;
+package com.revature.Animals;
 
 public interface Animal {
 	String animalName = ""; 

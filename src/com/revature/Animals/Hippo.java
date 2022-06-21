@@ -1,4 +1,4 @@
-package com.revatute.Animals;
+package com.revature.Animals;
 
 public class Hippo implements Animal {
 	String animalName = "Hippo"; 
