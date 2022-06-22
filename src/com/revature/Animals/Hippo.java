@@ -3,16 +3,16 @@ package com.revature.Animals;
 public class Hippo implements Animal {
 	String animalName = "Hippo"; 
 	String food = "35 kg of grass";
-	public void eat() {
-		System.out.print("The "+animalName+" eats "+food+".\n");
-	}
+	@Override
 	public void makeNoise() {
-		System.out.print("The "+animalName+" honks.\n");
+		System.out.print("The "+this.animalName+" honks.\n");
 	}
-	public void sleep() {
-		System.out.print("The "+animalName+" sleeps.\n");
+	@Override
+	public String getAnimalName() {
+		return animalName;
 	}
-	public void roam() {
-		System.out.print("The "+animalName+" roams.\n");
+	@Override
+	public String getFood() {
+		return food;
 	}
 }

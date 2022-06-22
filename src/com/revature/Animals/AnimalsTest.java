@@ -46,6 +46,7 @@ class AnimalsTest {
 	@Test
 	void hippoSleepTest() {
 		Hippo hp = new Hippo();
+		hp.sleep();
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream ps = new PrintStream(baos);
 		PrintStream old = System.out;
@@ -77,18 +78,18 @@ class AnimalsTest {
 	void hippoPictureTest() {
 		Hippo hp = new Hippo();
 		String expected = "";
-		assertTrue(expected.equals(hp.picture));
+		assertTrue(expected.equals(hp.getPicture()));
 	}
 	@Test
 	void hippoBoundriesTest() {
 		Hippo hp = new Hippo();
 		String expected = "";
-		assertTrue(expected.equals(hp.boundries));
+		assertTrue(expected.equals(hp.getBoundries()));
 	}
 	@Test
 	void hippoLocationTest() {
 		Hippo hp = new Hippo();
 		String expected = "";
-		assertTrue(expected.equals(hp.location));
+		assertTrue(expected.equals(hp.getLocation()));
 	}
 }
